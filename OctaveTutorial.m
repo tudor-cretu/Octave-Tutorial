@@ -132,3 +132,24 @@ vtDotP2 = dot(vt6, vt7) % the dot product, same as vtDotP1
 vtCross = cross(vt6, vt7)
 
 vt8 = linspace(1,20,4) % 4 values between 1 and 20, equally spaced
+
+vt9 = logspace(1,3,3) % prints 10, 100, 1000 
+
+% ---- MATRICES ----
+
+m1 = [2 3 4; 5 6 7; 8 9 10] % 3x3 matrix
+mNRV = length(m1) % number of values in a row
+mNV = numel(m1) % number of all elements in the matrix
+mS = size(m1) % number of rows & cols
+[nRows, nCols] = size(m1)
+m2 = randi([10, 20], 3) % random generated matrix with 2 rows & 2 cols
+
+m2(1, 2) % element from row 1 and col 2 
+m2(1,:) = 25 % changes all the elements of the 1st row to 25
+m2(:,1) = 25 % changes all the elements of the 1st column to 25
+mR1Last = m2(end, 1) % last value of the 1st colummn
+mR2Last = m2(2, end) % last value of the 2nd row
+
+% ---- LOOPING ----
+
+
